@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+/* font-family: 'IBM Plex Sans Arabic', sans-serif;  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+#container {
+    flex: 1;
+    display: flex;
+}
+
+
+#side-bar,
+#content-container {
+    /* border: 5px red solid; */
+}
+
+#side-bar {
+    flex: 1;
+    background-color: #1497d8;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr;
+    row-gap: 7rem;
+    color: #efefef;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.heading ul, 
+.navigation ul {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.heading li,
+.navigation li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading .icon,
+.navigation .icon {
+    justify-content: center;
+    grid-column: 1 / 2;
+}
+
+.navigation li {
+    text-align: left;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#side-bar svg {
+    fill: #efefef;
+    height: 2rem;
+}
+
+.heading svg {
+    height: 4rem !important;
+}
+#content-container {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+#header,
+#main-content {
+    /* border: 5px green solid; */
+}
+
+#header {
+    flex: 1;
+}
+
+#main-content {
+    flex: 4;
+}
+
+
